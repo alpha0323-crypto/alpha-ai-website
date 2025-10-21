@@ -195,6 +195,79 @@
             border-radius: 2px;
         }
 
+        .problems-section {
+            background: #f8f9fa;
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .problem-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .problem-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+        }
+
+        .problem-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .problem-text {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .image-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .image-placeholder {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 250px;
+            border: 2px dashed #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .image-placeholder:hover {
+            background: linear-gradient(135deg, #667eea25 0%, #764ba225 100%);
+            transform: scale(1.02);
+        }
+
+        .image-placeholder-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .image-placeholder-text {
+            color: #667eea;
+            font-weight: 600;
+            text-align: center;
+        }
+
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -249,6 +322,74 @@
             line-height: 1.8;
         }
 
+        .testimonials-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .testimonial-quote {
+            font-size: 3rem;
+            color: #667eea;
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        .testimonial-content {
+            margin-top: 2rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .testimonial-info {
+            flex: 1;
+        }
+
+        .testimonial-name {
+            font-weight: 700;
+            color: #333;
+        }
+
+        .testimonial-role {
+            font-size: 0.9rem;
+            color: #999;
+        }
+
         .about-section {
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
         }
@@ -274,6 +415,490 @@
             font-size: 1.1rem;
         }
 
+        .contact-form {
+            max-width: 600px;
+            margin: 3rem auto 0;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .example-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .example-btn {
+            background: #f0f0f0;
+            border: 2px solid #667eea;
+            color: #667eea;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .example-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .pricing-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card.featured {
+            border: 3px solid #667eea;
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured::before {
+            content: 'おすすめ';
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .plan-price-note {
+            text-align: center;
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .plan-features li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #555;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .plan-features li:last-child {
+            border-bottom: none;
+        }
+
+        .plan-features li::before {
+            content: '✓';
+            color: #667eea;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .plan-button {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 700;
+            text-align: center;
+            display: block;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .plan-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .subscription-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-top: 3rem;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .subscription-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .subscription-price {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        .subscription-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .subscription-feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .flow-section {
+            background: white;
+        }
+
+        .flow-steps {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+
+        .flow-step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            align-items: flex-start;
+        }
+
+        .flow-number {
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .flow-content {
+            flex: 1;
+            padding-top: 0.5rem;
+        }
+
+        .flow-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .flow-description {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .stats-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .stat-item {
+            padding: 2rem;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .faq-section {
+            background: white;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            font-weight: 700;
+            color: #333;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #667eea15;
+            color: #667eea;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer-content {
+            padding: 0 1.5rem 1.5rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .profile-section {
+            background: white;
+        }
+
+        .profile-container {
+            max-width: 900px;
+            margin: 3rem auto 0;
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .profile-image {
+            flex-shrink: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+            font-weight: 700;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .profile-content {
+            flex: 1;
+        }
+
+        .profile-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-title {
+            color: #667eea;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .profile-text {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .privacy-section {
+            background: #f8f9fa;
+        }
+
+        .privacy-content {
+            max-width: 800px;
+            margin: 3rem auto 0;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .privacy-content h3 {
+            color: #333;
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .privacy-content h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .privacy-content p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-content ul {
+            color: #666;
+            line-height: 1.8;
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
         .footer {
             background: #1a1a1a;
             color: white;
@@ -297,6 +922,15 @@
             .section {
                 padding: 3rem 5%;
             }
+
+            .profile-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .privacy-content {
+                padding: 2rem 1.5rem;
+            }
         }
     </style>
 </head>
@@ -306,6 +940,7 @@
             <div class="logo">アルファ株式会社</div>
             <nav class="nav">
                 <a href="#service">サービス</a>
+                <a href="#service">料金</a>
                 <a href="#about">会社概要</a>
                 <a href="#contact">お問い合わせ</a>
             </nav>
@@ -317,6 +952,53 @@
             <h1>AIで切り拓く、新しい副業の未来</h1>
             <p>最新のAI技術を活用した副業コンサルティングで、あなたの可能性を最大化します</p>
             <a href="#contact" class="cta-button">無料相談を申し込む</a>
+        </div>
+    </section>
+
+    <section class="section problems-section">
+        <h2 class="section-title">こんなお悩みありませんか？</h2>
+        <div class="problems-grid">
+            <div class="problem-item">
+                <div class="problem-icon">😰</div>
+                <div class="problem-text">副業を始めたいけど、何から始めればいいかわからない...</div>
+            </div>
+            <div class="problem-item">
+                <div class="problem-icon">⏰</div>
+                <div class="problem-text">本業が忙しくて、副業に割く時間がなかなか取れない</div>
+            </div>
+            <div class="problem-item">
+                <div class="problem-icon">💼</div>
+                <div class="problem-text">スキルがないから、稼げる副業が見つからない</div>
+            </div>
+            <div class="problem-item">
+                <div class="problem-icon">📉</div>
+                <div class="problem-text">副業を始めたけど、思うように収益が上がらない</div>
+            </div>
+            <div class="problem-item">
+                <div class="problem-icon">🤔</div>
+                <div class="problem-text">AIツールの使い方がわからず、活用できていない</div>
+            </div>
+            <div class="problem-item">
+                <div class="problem-icon">😓</div>
+                <div class="problem-text">独学では限界を感じている。プロのアドバイスが欲しい</div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <p style="font-size: 1.3rem; color: #667eea; font-weight: 600;">そんなあなたを、アルファ株式会社が全力でサポートします！</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">AIを活用した学習環境</h2>
+        <div class="image-section">
+            <div class="image-placeholder">
+                <div class="image-placeholder-icon">💻</div>
+                <div class="image-placeholder-text">最新のAIツールを<br>使いこなす学習環境</div>
+            </div>
+            <div class="image-placeholder">
+                <div class="image-placeholder-icon">👨‍💼</div>
+                <div class="image-placeholder-text">マンツーマンで<br>丁寧に指導します</div>
+            </div>
         </div>
     </section>
 
@@ -356,6 +1038,293 @@
         </div>
     </section>
 
+    <section class="section pricing-section">
+        <h2 class="section-title">料金プラン</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 1rem;">
+            ※各プランの具体的な内容は、最新のAIツールやトレンドに応じて柔軟に変更いたします
+        </p>
+        
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3 class="plan-name">ベーシックプラン</h3>
+                <div class="plan-price">¥50,000</div>
+                <div class="plan-price-note">買い切り</div>
+                <ul class="plan-features">
+                    <li>AI副業の基礎知識習得</li>
+                    <li>初心者向けツールの使い方</li>
+                    <li>副業スタートアップ支援</li>
+                    <li>基本的な収益化戦略</li>
+                    <li>1ヶ月間のメールサポート</li>
+                </ul>
+                <a href="#contact" class="plan-button">このプランを選ぶ</a>
+            </div>
+
+            <div class="pricing-card featured">
+                <h3 class="plan-name">スタンダードプラン</h3>
+                <div class="plan-price">¥100,000</div>
+                <div class="plan-price-note">買い切り</div>
+                <ul class="plan-features">
+                    <li>ベーシックプランの全内容</li>
+                    <li>中級者向けAIツール活用法</li>
+                    <li>個別コンサルティング（3回）</li>
+                    <li>収益化までの実践サポート</li>
+                    <li>2ヶ月間のチャットサポート</li>
+                    <li>限定コミュニティ参加権</li>
+                </ul>
+                <a href="#contact" class="plan-button">このプランを選ぶ</a>
+            </div>
+
+            <div class="pricing-card">
+                <h3 class="plan-name">プレミアムプラン</h3>
+                <div class="plan-price">¥150,000</div>
+                <div class="plan-price-note">買い切り</div>
+                <ul class="plan-features">
+                    <li>スタンダードプランの全内容</li>
+                    <li>上級者向けAI戦略構築</li>
+                    <li>個別コンサルティング（6回）</li>
+                    <li>収益最大化の徹底サポート</li>
+                    <li>3ヶ月間の優先サポート</li>
+                    <li>成功事例共有セッション</li>
+                    <li>特別限定セミナー参加権</li>
+                </ul>
+                <a href="#contact" class="plan-button">このプランを選ぶ</a>
+            </div>
+        </div>
+
+        <div class="subscription-card">
+            <div class="subscription-content">
+                <h3 style="font-size: 2rem; margin-bottom: 1rem;">継続サポート（サブスクリプション）</h3>
+                <div class="subscription-price">¥9,800<span style="font-size: 1.5rem;">/月</span></div>
+                <p style="margin-bottom: 2rem; opacity: 0.9;">いつでも解約可能・更新費用なし</p>
+                
+                <div class="subscription-features">
+                    <div class="subscription-feature">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">💬</div>
+                        <div>月2回のオンライン相談</div>
+                    </div>
+                    <div class="subscription-feature">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔄</div>
+                        <div>最新AIツール情報の共有</div>
+                    </div>
+                    <div class="subscription-feature">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+                        <div>収益レポート添削</div>
+                    </div>
+                    <div class="subscription-feature">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">👥</div>
+                        <div>専用コミュニティアクセス</div>
+                    </div>
+                </div>
+                
+                <p style="font-size: 0.9rem; margin-top: 2rem; opacity: 0.8;">
+                    ※単体プラン購入後の追加オプションとしてもご利用いただけます
+                </p>
+                <a href="#contact" class="cta-button" style="margin-top: 2rem; display: inline-block;">サブスクについて相談する</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section flow-section">
+        <h2 class="section-title">サービスの流れ</h2>
+        <div class="flow-steps">
+            <div class="flow-step">
+                <div class="flow-number">1</div>
+                <div class="flow-content">
+                    <h3 class="flow-title">無料相談</h3>
+                    <p class="flow-description">まずはお問い合わせフォームまたはメールでご連絡ください。現在の状況やご希望をお伺いし、最適なプランをご提案します。</p>
+                </div>
+            </div>
+            <div class="flow-step">
+                <div class="flow-number">2</div>
+                <div class="flow-content">
+                    <h3 class="flow-title">プラン選定・お申し込み</h3>
+                    <p class="flow-description">あなたに最適なプランを選択いただき、お申し込み手続きを行います。料金のお支払い方法についても柔軟に対応いたします。</p>
+                </div>
+            </div>
+            <div class="flow-step">
+                <div class="flow-number">3</div>
+                <div class="flow-content">
+                    <h3 class="flow-title">学習・実践開始</h3>
+                    <p class="flow-description">専属のコンサルタントがマンツーマンで指導。最新のAIツールの使い方から、実践的な副業スキルまで丁寧にサポートします。</p>
+                </div>
+            </div>
+            <div class="flow-step">
+                <div class="flow-number">4</div>
+                <div class="flow-content">
+                    <h3 class="flow-title">収益化サポート</h3>
+                    <p class="flow-description">学んだスキルを活かして実際に収益化。進捗を確認しながら、課題解決や戦略の最適化を継続的にサポートします。</p>
+                </div>
+            </div>
+            <div class="flow-step">
+                <div class="flow-number">5</div>
+                <div class="flow-content">
+                    <h3 class="flow-title">継続成長</h3>
+                    <p class="flow-description">サブスクリプションサポートで、さらなる成長をサポート。コミュニティでの情報交換や最新トレンドの共有も行います。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section stats-section">
+        <h2 class="section-title" style="color: white;">数字で見る実績</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">累計サポート人数</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3ヶ月</div>
+                <div class="stat-label">平均収益化期間</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">96%</div>
+                <div class="stat-label">顧客満足度</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24時間</div>
+                <div class="stat-label">平均返信時間</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials-section">
+        <h2 class="section-title">お客様の声</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <div class="testimonial-content">
+                    未経験から3ヶ月で月10万円の副業収入を達成できました！AIツールの使い方を丁寧に教えていただき、今では自信を持って仕事ができています。本当に感謝しています。
+                </div>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">A</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">田中 明子さん</div>
+                        <div class="testimonial-role">30代・会社員</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <div class="testimonial-content">
+                    独学で行き詰まっていた時にアルファさんに出会いました。的確なアドバイスのおかげで、効率的に作業ができるようになり、本業との両立も問題なくできています。
+                </div>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">K</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">佐藤 健太さん</div>
+                        <div class="testimonial-role">40代・エンジニア</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <div class="testimonial-content">
+                    AIについて全く知識がなかった私でも、わかりやすく教えていただけました。今では副業が楽しくて、新しい可能性を感じています。サポート体制も充実していて安心です。
+                </div>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">M</div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">山田 美咲さん</div>
+                        <div class="testimonial-role">20代・フリーランス</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section faq-section">
+        <h2 class="section-title">よくある質問</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Q. 完全初心者でも大丈夫ですか？
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        はい、全く問題ございません。むしろ初心者の方を多くサポートしてきた実績があります。基礎から丁寧にお教えしますので、ご安心ください。パソコンの基本操作ができれば大丈夫です。
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Q. どのくらいで収益化できますか？
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        個人差はありますが、平均して3ヶ月程度で初収益を得られる方が多いです。本業との両立や学習ペースによって変わりますが、早い方では1ヶ月で成果が出るケースもあります。
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Q. 本業が忙しいのですが、両立できますか？
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        はい、可能です。多くのクライアント様が本業と両立されています。週末や平日の夜など、あなたのペースに合わせて学習できる柔軟なサポート体制を整えています。オンライン完結なので、移動時間も不要です。
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Q. サブスクリプションはいつでも解約できますか？
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        はい、いつでも解約可能です。違約金や解約手数料は一切かかりません。月額制ですので、翌月から自動的に課金が停止されます。再開も自由ですので、ご自身のペースでご利用いただけます。
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Q. 使用するAIツールは何ですか？
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        ChatGPT、Claude、Midjourney、Canvaなど、最新かつ実用的なAIツールを幅広く扱います。ただし、AIツールは日々進化しているため、その時々の最適なツールを柔軟にご提案します。ツールの選定もサポートの一環です。
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Q. 支払い方法は何がありますか？
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        銀行振込、クレジットカード決済に対応しております。また、分割払いのご相談も承りますので、お気軽にお問い合わせください。
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Q. 対面でのサポートはありますか？
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        基本的にはオンライン（Zoom等）でのサポートとなります。ただし、特別なご要望がある場合は、東京都内での対面サポートも可能な場合がございますので、ご相談ください。
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Q. 返金保証はありますか？
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        サービス開始から7日以内であれば、理由を問わず全額返金いたします。まずは安心してお試しください。詳細は無料相談時にご説明いたします。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="about" class="section about-section">
         <h2 class="section-title">アルファ株式会社について</h2>
         <div style="max-width: 800px; margin: 0 auto; text-align: center;">
@@ -365,6 +1334,25 @@
             <p style="font-size: 1.2rem; line-height: 2;">
                 経験豊富なAI専門家とビジネスコンサルタントが、あなたの成功への道のりを伴走します。まずは無料相談から、あなたの可能性を一緒に探ってみませんか。
             </p>
+        </div>
+    </section>
+
+    <section class="section profile-section">
+        <h2 class="section-title">代表挨拶</h2>
+        <div class="profile-container">
+            <div class="profile-image">
+                A
+            </div>
+            <div class="profile-content">
+                <h3 class="profile-name">代表取締役 田中 一郎</h3>
+                <p class="profile-title">AI副業コンサルタント / 起業家</p>
+                <p class="profile-text">
+                    はじめまして。アルファ株式会社の代表を務めております田中と申します。私自身、会社員時代にAIを活用した副業で成功した経験から、この事業を立ち上げました。
+                </p>
+                <p class="profile-text">
+                    「AIは難しい」と思われがちですが、正しい知識と実践的なサポートがあれば、誰でも活用できます。私たちは、あなたの夢の実現を全力でサポートいたします。まずはお気軽にご相談ください。
+                </p>
+            </div>
         </div>
     </section>
 
@@ -385,17 +1373,111 @@
                 <span>平日 9:00-18:00</span>
             </div>
         </div>
-        <div style="margin-top: 3rem;">
-            <a href="mailto:info@beauhel.com" class="cta-button">今すぐ無料相談を申し込む</a>
+        
+        <div class="contact-form">
+            <h3 style="color: #333; margin-bottom: 1.5rem; text-align: center;">お問い合わせフォーム</h3>
+            
+            <form id="contactForm" action="mailto:contact@felicita2016.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">お名前 <span style="color: #667eea;">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">メールアドレス <span style="color: #667eea;">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">電話番号</label>
+                    <input type="tel" id="phone" name="phone" placeholder="090-1234-5678">
+                </div>
+
+                <div class="form-group">
+                    <label for="website">ホームページ・SNS URL（お持ちの場合）</label>
+                    <input type="url" id="website" name="website" placeholder="https://...">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">お問い合わせ内容 <span style="color: #667eea;">*</span></label>
+                    <div class="example-buttons">
+                        <button type="button" class="example-btn" onclick="setExample(1)">📝 例文1</button>
+                        <button type="button" class="example-btn" onclick="setExample(2)">📝 例文2</button>
+                        <button type="button" class="example-btn" onclick="setExample(3)">📝 例文3</button>
+                    </div>
+                    <textarea id="message" name="message" required placeholder="お問い合わせ内容をご記入ください"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">送信する</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section privacy-section">
+        <h2 class="section-title">プライバシーポリシー</h2>
+        <div class="privacy-content">
+            <p>アルファ株式会社（以下「当社」）は、お客様の個人情報保護の重要性について認識し、個人情報の保護に関する法律（以下「個人情報保護法」）を遵守すると共に、以下のプライバシーポリシー（以下「本ポリシー」）に従い、適切な取扱い及び保護に努めます。</p>
+
+            <h3>1. 個人情報の定義</h3>
+            <p>本ポリシーにおいて、個人情報とは、個人情報保護法第2条第1項により定義された個人情報、すなわち、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日その他の記述等により特定の個人を識別することができるもの（他の情報と容易に照合することができ、それにより特定の個人を識別することができることとなるものを含みます）、もしくは個人識別符号が含まれる情報を意味します。</p>
+
+            <h3>2. 個人情報の収集方法</h3>
+            <p>当社は、お客様が当社サービスを利用される際に、以下の情報を収集する場合があります：</p>
+            <ul>
+                <li>氏名、メールアドレス、電話番号などの連絡先情報</li>
+                <li>お問い合わせ内容やご相談内容</li>
+                <li>サービス利用時の情報</li>
+                <li>その他、サービス提供に必要な情報</li>
+            </ul>
+
+            <h3>3. 個人情報の利用目的</h3>
+            <p>当社は、収集した個人情報を以下の目的で利用いたします：</p>
+            <ul>
+                <li>サービスの提供・運営のため</li>
+                <li>お客様からのお問い合わせへの対応のため</li>
+                <li>サービスに関する情報提供のため</li>
+                <li>サービスの改善・開発のため</li>
+                <li>利用規約等に違反する行為への対応のため</li>
+            </ul>
+
+            <h3>4. 個人情報の第三者提供</h3>
+            <p>当社は、以下の場合を除き、お客様の同意なく個人情報を第三者に提供することはありません：</p>
+            <ul>
+                <li>法令に基づく場合</li>
+                <li>人の生命、身体又は財産の保護のために必要がある場合</li>
+                <li>公衆衛生の向上又は児童の健全な育成の推進のために特に必要がある場合</li>
+                <li>国の機関等の法令の定める事務への協力の場合</li>
+            </ul>
+
+            <h3>5. 個人情報の管理</h3>
+            <p>当社は、個人情報の正確性を保ち、これを安全に管理いたします。また、個人情報の漏洩、滅失、毀損等を防止するため、不正アクセス、コンピュータウイルス等に対する適切な情報セキュリティ対策を講じます。</p>
+
+            <h3>6. お問い合わせ</h3>
+            <p>個人情報の取扱いに関するお問い合わせは、以下の連絡先までお願いいたします。</p>
+            <p>アルファ株式会社<br>
+            メール：contact@felicita2016.com<br>
+            住所：〒107-0062 東京都港区南青山2-2-15-942</p>
+
+            <p style="margin-top: 2rem; text-align: right; color: #999;">制定日：2025年1月1日</p>
         </div>
     </section>
 
     <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-link" title="Instagram">📷</a>
+            <a href="#" class="social-link" title="Twitter/X">𝕏</a>
+            <a href="#" class="social-link" title="Facebook">f</a>
+            <a href="#" class="social-link" title="YouTube">▶</a>
+            <a href="#" class="social-link" title="LINE">L</a>
+        </div>
         <p>&copy; 2025 アルファ株式会社. All Rights Reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+            <a href="#about" style="color: #999; text-decoration: none; margin: 0 1rem;">会社概要</a>
+            <a href="#contact" style="color: #999; text-decoration: none; margin: 0 1rem;">お問い合わせ</a>
+        </p>
     </footer>
 
     <script>
-        // ヘッダーのスクロールエフェクト
         window.addEventListener('scroll', function() {
             const header = document.querySelector('.header');
             if (window.scrollY > 50) {
@@ -405,7 +1487,6 @@
             }
         });
 
-        // スムーススクロール
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -419,7 +1500,6 @@
             });
         });
 
-        // カードのアニメーション
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -434,12 +1514,78 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.feature-card').forEach(card => {
+        document.querySelectorAll('.feature-card, .testimonial-card, .problem-item').forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px)';
             card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(card);
         });
+
+        // お問い合わせフォームの例文機能
+        function setExample(num) {
+            const messageField = document.getElementById('message');
+            let exampleText = '';
+            
+            if (num === 1) {
+                exampleText = `はじめまして。AI副業コンサルティングに興味があり、お問い合わせさせていただきました。
+
+現在は会社員として働いておりますが、AIを活用した副業を始めたいと考えております。しかし、何から始めれば良いのかわからず、専門家のアドバイスをいただきたいと思っております。
+
+無料相談では具体的にどのような内容をお伺いできますでしょうか？
+また、初回相談の所要時間や、オンラインでの対応は可能かどうかも教えていただけますと幸いです。
+
+お忙しいところ恐れ入りますが、ご連絡お待ちしております。`;
+            } else if (num === 2) {
+                exampleText = `お世話になります。御社のAI副業コンサルティングサービスについて詳しくお話を伺いたく、ご連絡いたしました。
+
+現在、副業で月5万円ほどの収入がありますが、AIツールを活用してさらに収益を伸ばしたいと考えております。特にChatGPTなどの生成AIに興味があります。
+
+以下の点について教えていただけますでしょうか：
+・コンサルティングの料金体系
+・サポート期間や内容
+・過去の成功事例
+
+また、私のホームページやSNSアカウントは以下の通りです：
+（URL欄にご記入ください）
+
+よろしくお願いいたします。`;
+            } else if (num === 3) {
+                exampleText = `こんにちは。AI副業について全くの初心者なのですが、御社のサービスに興味を持ちました。
+
+【現在の状況】
+・副業経験：なし
+・AIツール使用経験：なし
+・希望する副業開始時期：3ヶ月以内
+
+このような状態からでもサポートいただけますでしょうか？
+また、どのくらいの期間で収益化が見込めるのかも知りたいです。
+
+まずは無料相談で詳しくお話を聞かせていただければと思います。
+どうぞよろしくお願いいたします。`;
+            }
+            
+            messageField.value = exampleText;
+            messageField.style.height = 'auto';
+            messageField.style.height = messageField.scrollHeight + 'px';
+        }
+
+        // FAQトグル機能
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const isActive = element.classList.contains('active');
+            
+            // 全てのFAQを閉じる
+            document.querySelectorAll('.faq-question').forEach(q => {
+                q.classList.remove('active');
+                q.nextElementSibling.style.maxHeight = null;
+            });
+            
+            // クリックされたFAQを開く（既に開いていた場合は閉じたまま）
+            if (!isActive) {
+                element.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        }
     </script>
 </body>
 </html>
